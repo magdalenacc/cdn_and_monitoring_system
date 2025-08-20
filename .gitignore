@@ -3,18 +3,31 @@ build/
 *.o
 *.so
 *.a
+*.exe
 
 # IDE files
 .vscode/
 .idea/
 *.swp
 *.swo
+*~
 
-# Obsidian
-.obsidian/workspace.json
-.obsidian/workspace-mobile.json
-.obsidian/hotkeys.json
+# Obsidian (keep structure, ignore personal settings)
+knowledge-base/.obsidian/workspace*.json
+knowledge-base/.obsidian/hotkeys.json
+knowledge-base/.obsidian/graph.json
+knowledge-base/.obsidian/appearance.json
+knowledge-base/.obsidian/app.json
 
-# OS files  
+# OS files
 .DS_Store
 Thumbs.db
+*.tmp
+
+# Dependencies
+node_modules/
+*.log
+
+# Test results
+*.coverage
+coverage/
